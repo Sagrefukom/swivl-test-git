@@ -1,0 +1,26 @@
+.info {
+
+    &-name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+    }
+    &-mail {
+
+    }
+    &__edit {
+        cursor: pointer;
+
+        &-item {
+            
+        }
+        &-text {
+            color: $text-color-red;
+
+            &:hover {
+                border-bottom: 1px solid $text-color-red;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.stats {
+
+    &__text {
+        font-size: 18px;
+        line-height: 25px;
+        cursor: pointer;
+        color: $text-color-red;
+    }
+    &__block {
+        display: flex;
+        cursor: pointer;
+
+        &-icon {
+            padding: 0 5px;
+        }
+        &-count {
+            padding: 0 5px;
+        }
+    }
+}

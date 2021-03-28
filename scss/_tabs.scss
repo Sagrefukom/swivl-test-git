@@ -1,0 +1,20 @@
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+
+    &__tab {
+        padding: 0 0 20px 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        opacity: 0.6;
+        cursor: pointer;
+
+        &.active {
+            opacity: inherit;
+            border-bottom: 4px solid #ED5267;
+        }
+    }
+}

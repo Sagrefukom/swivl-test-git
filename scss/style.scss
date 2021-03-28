@@ -1,0 +1,28 @@
+@import "null-styles";
+@import "fonts";
+@import "variables";
+
+@import "container";
+@import "header";
+@import "accordion";
+@import "icon";
+@import "tabs";
+@import "tab";
+@import "user";
+@import "info";
+@import "dots";
+@import "switcher";
+@import "switch";
+@import "card";
+@import "name";
+@import "stats";
+
+body {
+    min-width: 300px;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: $text-color;
+    font-family: 'Open Sans', sans-serif;
+}

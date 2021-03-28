@@ -1,0 +1,67 @@
+.accordion {
+    padding-right: 20px;
+    &__item {
+  
+    }
+    &__title {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-right: 20px;
+      cursor: pointer;
+  
+      &::before {
+        transform: rotate(-40deg);
+        right: 0;
+      }
+      &::after {
+        transform: rotate(40deg);
+        right: 5px;
+      }
+  
+      &:before , &:after {
+        content: '';
+        width: 7px;
+        height: 1px;
+        background-color: #3E4056;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+      }
+      &.active::before{
+        transform: rotate(40deg);
+      }
+      &.active::after {
+        transform: rotate(-40deg);
+      }
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0 5px;
+      letter-spacing: -0.5px;
+    }
+    &__block {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        z-index: 2;
+  
+      &-item {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0 0;
+        cursor: pointer;
+        border-radius: 60px;
+        padding: 6px;
+
+        &:hover {
+          border: 2px solid $text-color-red;
+          transition: all 0.3s ease 0s;
+        }
+      }
+    }
+    &__photo {
+      height: 32px;
+      width: 32px;
+    }
+  }
